@@ -2,9 +2,9 @@
 
 _For absolute beginners_
 
-Prepared by
-**Aeliya Tamang**
-[+977-9803079279](tel:+977-9803079279)
+Prepared by\
+**Aeliya Tamang**\
+[+977-9803079279](tel:+977-9803079279)\
 [aeliyadevs@gmail.com](mailto:aeliyadevs@gmail.com)
 
 ## Introduction
