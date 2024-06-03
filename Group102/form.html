@@ -1,0 +1,52 @@
+<html>
+<head>
+<title>Registration Form</title>
+</head>
+<body>
+<h1>Registration Form</h1>
+
+<!--
+Form - Get user inputs
+Tags - <form></form>
+Attributes - method, action
+Related Tags - <input /><select></select><textarea></textarea>
+Important attributes - type, placeholder, name
+
+TASK
+====
+-- method(GET,POST), action
+-- Input types - radio, checkbox, submit
+-- Dropdown
+-->
+
+<form method="GET">
+<input type="text" name="fullName" placeholder="Full Name"/>
+<input type="date" name="dob" placeholder="Date of Birth"/>
+<input type="email" name="email" placeholder="Email Address"/>
+<input type="number" name="contact" placeholder="Contact Number"/>
+<input type="number" name="age" min="0" max="120" placeholder="Age"/>
+
+<br />
+<h3>Gender</h3>
+<input type="radio" name="gender" /><label>Male</label>
+<input type="radio" name="gender" /><label>Female</label>
+<input type="radio" name="gender" /><label>Prefer not to say</label>
+
+<br />
+<h3>Hobbies</h3>
+<input type="checkbox" name="hobbies" value="" /><label>Singing</label>
+<input type="checkbox" name="hobbies" /><label>Dancing</label>
+<input type="checkbox" name="hobbies" /><label>Acting</label>
+<input type="checkbox" name="hobbies" /><label>Playing Guitar</label>
+<input type="checkbox" name="hobbies" /><label>Football</label>
+
+<br />
+<input type="text" name="username" placeholder="Username"/>
+<input type="password" name="password" placeholder="Password"/>
+
+<br />
+<input type="submit" value="Register Now"/>
+</form>
+
+</body>
+</html>
