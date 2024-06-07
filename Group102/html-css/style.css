@@ -1,0 +1,27 @@
+/*
+CSS Syntax
+==========
+Selectors {declarations}
+
+Example: 
+h1 {color:red; font-family: san-serif;}
+
+
+Selectors
+---------
+HTML tags, class, id, attributes, pseudo-element, pseudo-class
+
+*/
+
+/* HTML Tags as selector */
+body {padding: 50px;}
+h1{color: blue;}
+h2{color: red;}
+h3{color: green;}
+
+/* Class Selector */
+.para {color: orange;}
+
+/* ID Selector */
+#myid {color: purple;}
+

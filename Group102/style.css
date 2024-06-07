@@ -1,3 +1,36 @@
 body {
-background: #eeffff;
+background: #525659;
+padding: 10px;
+font-family: "Roboto", sans-serif;
+}
+
+div {
+background: #ffffff;
+max-width: 768px;
+margin: 0 auto;
+padding: 75px 60px;
+}
+
+h1 {
+font-weight: 400;
+margin-bottom: 0;
+}
+h2 {
+font-weight: 400;
+margin-top: 30px;
+margin-bottom: 0;
+}
+p,
+ul,
+ol {
+margin-top: 8px;
+}
+a {
+color: #467886;
+}
+img {
+width: 100%;
+}
+li {
+margin-bottom: 5px;
 }
