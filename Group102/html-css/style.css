@@ -18,10 +18,31 @@ body {padding: 50px;}
 h1{color: blue;}
 h2{color: red;}
 h3{color: green;}
+p {margin: 0;}
 
 /* Class Selector */
 .para {color: orange;}
 
 /* ID Selector */
 #myid {color: purple;}
+
+.box {
+/* Border */
+border-width: 2px;
+border-style: solid;
+border-color: red;
+
+/* Padding */
+padding: 15px;
+padding-left: 50px;
+padding-right: 50px;
+padding-top: 50px;
+padding-bottom: 50px;
+
+/* Margin */
+margin-left: 50px;
+margin-right: 50px;
+margin-top: 50px;
+margin-bottom: 50px;
+}
 
