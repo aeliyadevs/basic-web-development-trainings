@@ -21,7 +21,7 @@ h3{color: green;}
 p {margin: 0;}
 
 /* Class Selector */
-.para {color: orange;}
+.text-prop {color: orange;}
 
 /* ID Selector */
 #myid {color: purple;}
@@ -31,13 +31,16 @@ p {margin: 0;}
 border-width: 2px;
 border-style: solid;
 border-color: red;
+border-left-width: 5px;
+border-left-style: dashed;
+border-left-color: blue;
 
 /* Padding */
 padding: 15px;
-padding-left: 50px;
+padding-left: 30px;
 padding-right: 50px;
-padding-top: 50px;
-padding-bottom: 50px;
+padding-top: 75px;
+padding-bottom: 15px;
 
 /* Margin */
 margin-left: 50px;
@@ -46,3 +49,35 @@ margin-top: 50px;
 margin-bottom: 50px;
 }
 
+.text-prop {
+/* Text Properties */
+text-align: center; 
+/* options: left, center, right */
+
+text-transform: Capitalize;
+/* options: Uppercase, Lowercase, Capitalize */
+
+text-decoration: overline;
+/* options: underline, overline, line-through, none */
+
+letter-spacing: 15px;
+
+line-height: 30px;
+}
+
+.font-prop {
+/* Font Properties */
+
+font-family: poppins;
+/* Options : monospace, sans-serif, cursive and custom fonts */
+
+font-size: 20px;
+
+font-weight: 700;
+/* options: thin, regular, semi-bold, bold, black, 100, 200, 300, ...., 900 */
+
+}
+
+.custom-font {
+font-family: "Noto Sans Devanagari", sans-serif;
+}
