@@ -1,0 +1,31 @@
+/* CSS Comment */
+
+/*
+CSS Selectors 
+1. Element/Tag/Simple Selector
+2. ID Selector
+3. Class Selector
+*/
+
+/* Simple Selector */
+h1 {
+  color: #110e68;
+}
+h2 {
+  color: #110e68;
+}
+h3 {
+  color: #110e68;
+}
+
+/* ID Selector */
+#myid {
+  background-color: blueviolet;
+  color: #ffffff;
+  display: inline;
+}
+
+/* Class Selector */
+.myclass {
+  color: blueviolet;
+}
