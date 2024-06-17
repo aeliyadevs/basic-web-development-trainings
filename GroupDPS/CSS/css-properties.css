@@ -1,0 +1,19 @@
+/* CSS BASIC PROPERTIES */
+
+/* Text Properties */
+
+/* color */
+.red {
+  color: red;
+}
+
+/* Text Transform */
+.transform {
+  text-transform: uppercase;
+  /* Options: uppercase, lowercase, capitalize */
+}
+
+/* Line Height */
+.line-height {
+  line-height: 15px;
+}
