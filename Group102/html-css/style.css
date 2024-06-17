@@ -14,70 +14,98 @@ HTML tags, class, id, attributes, pseudo-element, pseudo-class
 */
 
 /* HTML Tags as selector */
-body {padding: 50px;}
-h1{color: blue;}
-h2{color: red;}
-h3{color: green;}
-p {margin: 0;}
+body {
+  padding: 50px;
+}
+h1 {
+  color: blue;
+}
+h2 {
+  color: red;
+}
+h3 {
+  color: green;
+}
+p {
+  margin: 0;
+}
 
 /* Class Selector */
-.text-prop {color: orange;}
+.text-prop {
+  color: orange;
+}
 
 /* ID Selector */
-#myid {color: purple;}
+#myid {
+  color: purple;
+}
 
 .box {
-/* Border */
-border-width: 2px;
-border-style: solid;
-border-color: red;
-border-left-width: 5px;
-border-left-style: dashed;
-border-left-color: blue;
+  /* Border */
+  border-width: 2px;
+  border-style: solid;
+  border-color: red;
+  border-left-width: 5px;
+  border-left-style: dashed;
+  border-left-color: blue;
 
-/* Padding */
-padding: 15px;
-padding-left: 30px;
-padding-right: 50px;
-padding-top: 75px;
-padding-bottom: 15px;
+  /* Padding */
+  padding: 15px;
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 75px;
+  padding-bottom: 15px;
 
-/* Margin */
-margin-left: 50px;
-margin-right: 50px;
-margin-top: 50px;
-margin-bottom: 50px;
+  /* Margin */
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-top: 50px;
+  margin-bottom: 50px;
 }
 
 .text-prop {
-/* Text Properties */
-text-align: center; 
-/* options: left, center, right */
+  /* Text Properties */
+  text-align: center;
+  /* options: left, center, right */
 
-text-transform: Capitalize;
-/* options: Uppercase, Lowercase, Capitalize */
+  text-transform: capitalize;
+  /* options: Uppercase, Lowercase, Capitalize */
 
-text-decoration: overline;
-/* options: underline, overline, line-through, none */
+  text-decoration: overline;
+  /* options: underline, overline, line-through, none */
 
-letter-spacing: 15px;
+  letter-spacing: 15px;
 
-line-height: 30px;
+  line-height: 30px;
 }
 
 .font-prop {
-/* Font Properties */
+  /* Font Properties */
 
-font-family: poppins;
-/* Options : monospace, sans-serif, cursive and custom fonts */
+  font-family: poppins;
+  /* Options : monospace, serif, sans-serif, cursive and custom fonts */
 
-font-size: 20px;
+  font-size: 20px;
 
-font-weight: 700;
-/* options: thin, regular, semi-bold, bold, black, 100, 200, 300, ...., 900 */
+  font-weight: 700;
+  /* options: thin, regular, semi-bold, bold, black, 100, 200, 300, ...., 900 */
 
+  font-style: italic;
+  /* options: italic, oblique, normal */
+  /* Font Style */
 }
 
 .custom-font {
-font-family: "Noto Sans Devanagari", sans-serif;
+  font-family: "Noto Sans Devanagari", sans-serif;
+}
+
+/* List Properties */
+.mylist {
+  list-style-type: none;
+  /* options: square, circle, disc, none*/
+
+  list-style-image: url("../images/plus.svg");
+
+  list-style-position: inside;
+  /* options: inside, outside, unset */
 }
