@@ -101,11 +101,23 @@ p {
 
 /* List Properties */
 .mylist {
-  list-style-type: none;
+  list-style-type: circle;
   /* options: square, circle, disc, none*/
 
   list-style-image: url("../images/plus.svg");
 
-  list-style-position: inside;
+  list-style-position: outside;
   /* options: inside, outside, unset */
+}
+
+/* Background Properties */
+.box {
+  background-color: skyblue;
+  background-image: url("https://static-cse.canva.com/blob/1300547/feature_ai-image-enhancer_hero.e92266b9.jpg");
+
+  background-repeat: repeat;
+  /* options: no-repeat, repeat, repeat-x, repeat-y */
+
+  background-size: contain;
+  /* options: auto, cover, contain, numeric value */
 }
