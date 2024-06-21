@@ -4,6 +4,11 @@
 
 /* Text Properties */
 
+body {
+  margin: 0;
+  padding: 0;
+}
+
 /* color */
 .red {
   color: red;
@@ -63,4 +68,24 @@ h1 {
   /* font-style */
   font-style: normal;
   /* options: normal, italic, oblique */
+}
+
+/* Border Properties */
+.mydiv {
+  /* border: 3px solid red; */
+  border-top: 10px solid red;
+  border-left: 30px solid green;
+  border-right: 40px solid green;
+  /* border-bottom: 20px solid green; */
+  border-bottom-color: red;
+  border-bottom-width: 4px;
+  border-bottom-style: solid;
+  /* Options: solid, double, dashed, dotted, groove */
+
+  border-radius: 50px 25px 15px 30px;
+  border-top-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  /* Clockwise */
+  padding: 150px;
+  margin: 50px;
 }
