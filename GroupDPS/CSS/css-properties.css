@@ -89,3 +89,34 @@ h1 {
   padding: 150px;
   margin: 50px;
 }
+
+.mymargin {
+  border: 3px solid black;
+  /* margin: 50px; */
+  /* margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  margin-bottom: 50px; */
+  margin: 50px 100px 30px 15px;
+}
+
+.mypadding {
+  border: 3px solid black;
+  /* padding: 50px 40px 100px 20px; */
+  padding-left: 30px;
+  padding-right: 50px;
+  padding-top: 15px;
+  padding-bottom: 75px;
+}
+.unordered {
+  padding-left: 300px;
+  /* list-style-type: square; */
+  /* options: disc, circle, square, none */
+  list-style-image: url("data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAC4AAAAuCAMAAABgZ9sFAAAAOVBMVEX///8AAADe3t7Z2dk0NDTr6+vz8/OXl5f5+fl4eHjS0tJDQ0Ovr69cXFxtbW2kpKRiYmISEhLk5OS6C6ovAAABCklEQVRIidWW6RKDIAyEsxIvQNG+/8MWvHDacmSmP9qd8eRTNzEYCV69GqigQfWBJGApoaeWgFfTgSfU0+ThXoL3pCS4omJO7hLBvy47rbjEs83CGm/SWdo43VxSlnO8r83XU74Ok77Br4E8yCDlf44jbetXAzCR88tnMfYC6sYQ49htd9ZYk9absFFnUraCapLmd7zz6fFPUQboqIyPMPuhwViB44ggmCrjbRwG2m/j0YyuMRND5apQj0Rqrkvk/TVl8fUo1qsI9os5gU9w5+5WYpss5gRuzyDv4mQBC6dHyDRbFSefdqY0WQVTO/ifOaLrlP9w/JmE7UDYbIStTNgopW1Y2ORFvxBPMS4GF2RK4NsAAAAASUVORK5CYII=");
+  list-style-position: inside;
+  /* options: inside, outside */
+}
+.ordered {
+  list-style-type: decimal;
+  /* options: decimal, upper-roman, lower-roman, upper-alpha, lower-alpha */
+}
