@@ -1,0 +1,26 @@
+body {
+  font-family: sans-serif;
+}
+.main-image {
+  width: 250px;
+  border-radius: 150px;
+}
+.flag-image {
+  width: 75px;
+}
+.icon {
+  width: 50px;
+}
+h1 {
+  color: #d47100;
+  font-weight: 500;
+}
+h2 {
+  color: #222222;
+  font-weight: 500;
+  font-size: 22px;
+}
+p {
+  color: #575757;
+  font-size: 17px;
+}
