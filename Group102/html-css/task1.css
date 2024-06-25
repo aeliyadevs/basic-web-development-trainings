@@ -1,26 +1,52 @@
 body {
   font-family: sans-serif;
+  background-color: #bcdee7;
+}
+div {
+  width: 350px;
+  background-color: white;
+  padding: 35px;
+  text-align: center;
+  border-radius: 6px;
+  margin: 90px auto;
+  position: relative;
 }
 .main-image {
-  width: 250px;
-  border-radius: 150px;
+  width: 200px;
+  border: 18px solid #e7e7e7;
+  border-radius: 250px;
+  box-shadow: 0 0 8px #e1e1e1;
 }
 .flag-image {
-  width: 75px;
+  width: 40px;
+  border-radius: 40px;
+  position: absolute;
+  border: 8px solid white;
+  left: 255px;
+  top: 220px;
+  box-shadow: 0 0 8px #e1e1e1;
 }
 .icon {
   width: 50px;
 }
 h1 {
-  color: #d47100;
+  font-size: 36px;
+  color: #f18100;
   font-weight: 500;
+  /* text-align: center; */
+  margin-bottom: 0;
 }
 h2 {
   color: #222222;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 24px;
+  /* text-align: center; */
+  margin-top: 10px;
+  margin-bottom: 40px;
 }
 p {
   color: #575757;
-  font-size: 17px;
+  font-size: 20px;
+  /* text-align: center; */
+  line-height: 30px;
 }
