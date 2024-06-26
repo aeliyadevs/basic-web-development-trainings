@@ -108,6 +108,8 @@ h1 {
   padding-top: 15px;
   padding-bottom: 75px;
 }
+
+/* List Properties */
 .unordered {
   padding-left: 300px;
   /* list-style-type: square; */
@@ -119,4 +121,34 @@ h1 {
 .ordered {
   list-style-type: decimal;
   /* options: decimal, upper-roman, lower-roman, upper-alpha, lower-alpha */
+}
+
+/* Background Properties */
+.background {
+  width: 1000px;
+  height: 1000px;
+  color: aqua;
+  padding: 15px;
+
+  /* Background color */
+  background-color: navy;
+
+  /* Background Image */
+  background-image: url("https://images.unsplash.com/photo-1495615080073-6b89c9839ce0?fm=jpg&w=3000&auto=format&fit=crop&q=60&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8c3F1YXJlfGVufDB8fDB8fHww");
+
+  /* Background Size */
+  /* background-size: 100px; */
+  background-size: fill;
+  /* background-size: contain; */
+  /* options: actual size, cover, contain, fill */
+
+  /* Background Repeat */ 
+  /* background-repeat: repeat;/ */
+  background-repeat: no-repeat;
+  /* background-repeat: repeat-x; */
+  /* background-repeat: repeat-y; */
+  /* options: repeat, no-repeat, repeat-x, repeat-y */
+
+  /* Background Position */
+  /* Background Attachment */
 }
