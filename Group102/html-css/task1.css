@@ -1,8 +1,9 @@
 body {
   font-family: sans-serif;
   background-color: #bcdee7;
+  margin: 0;
 }
-div {
+.main-div {
   width: 350px;
   background-color: white;
   padding: 35px;
