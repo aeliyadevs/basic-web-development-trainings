@@ -1,0 +1,4 @@
+body {
+  /* linear-gradient(angel(optional), color-1, color-2, ...., color-n) */
+  background: linear-gradient(155deg, #6c43fa, #fa284b);
+}
