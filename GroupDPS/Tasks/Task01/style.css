@@ -1,0 +1,32 @@
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+h1 {
+  color: #ff7700;
+  font-weight: 500;
+  font-size: 45px;
+}
+h2 {
+  color: #171717;
+  font-weight: 500;
+  font-size: 32px;
+}
+p {
+  color: #606060;
+  font-weight: 500;
+  font-size: 22px;
+}
+img {
+  border-radius: 200px;
+}
+.profile {
+  width: 220px;
+}
+.flag {
+  width: 40px;
+}
+.icon {
+  width: 45px;
+}
