@@ -1,0 +1,32 @@
+body {
+  /* background: linear-gradient(-20deg, #ff2445, #6640ff); */
+  /* background: radial-gradient(red, blue);
+  /* background: conic-gradient(red, blue); */
+  /* gradient-options: linear, radial, conic, repeating */
+  font-family: "Quicksand", sans-serif;
+  color: #425f76;
+  text-align: center;
+}
+img {
+  width: 130px;
+  height: 130px;
+  border-radius: 130px;
+  border: 6px solid #6640ffb7;
+  object-fit: cover;
+}
+h1 {
+  color: #6640ff;
+  font-size: 22px;
+}
+p {
+  font-size: 15px;
+}
+i {
+  margin-right: 8px;
+}
+h2 {
+  font-size: 22px;
+}
+/* .numbers {
+  display: flex;
+} */
