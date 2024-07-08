@@ -1,18 +1,28 @@
 body {
-  /* background: linear-gradient(-20deg, #ff2445, #6640ff); */
+  background: linear-gradient(-20deg, #ff2445, #6640ff);
   /* background: radial-gradient(red, blue);
   /* background: conic-gradient(red, blue); */
   /* gradient-options: linear, radial, conic, repeating */
   font-family: "Quicksand", sans-serif;
-  color: #425f76;
+  color: #243c51;
   text-align: center;
+}
+.main-box {
+  background: white;
+  width: 560px;
+  border-radius: 10px;
+  margin: 150px auto;
+  box-shadow: 0 0 25px #4d5d6a;
 }
 img {
   width: 130px;
   height: 130px;
   border-radius: 130px;
-  border: 6px solid #6640ffb7;
+  border: 8px solid #6640ffb7;
   object-fit: cover;
+  margin-top: -65px;
+  margin-bottom: 15px;
+  box-shadow: 0 0 30px #6640ff;
 }
 h1 {
   color: #6640ff;
@@ -30,3 +40,38 @@ h2 {
 /* .numbers {
   display: flex;
 } */
+.numbers {
+  width: 100%;
+  /* display: flex; */
+}
+.set {
+  width: 25%;
+  float: left;
+  margin-bottom: 20px;
+}
+.icon {
+  color: white;
+  background-color: #6640ff;
+  padding: 15px;
+  border-radius: 30px;
+  box-shadow: 0 0 15px #6640ff;
+  width: 16px;
+  margin: 0 8px;
+}
+button {
+  color: white;
+  border: none;
+  padding: 14px;
+  width: 160px;
+  border-radius: 100px;
+  font-size: 15px;
+  font-weight: 600;
+  margin: 40px 25px;
+}
+.left {
+  background: linear-gradient(90deg, #0cc5f8, #028eda);
+}
+
+.right {
+  background: linear-gradient(90deg, #c83b5b, #ff3939);
+}
