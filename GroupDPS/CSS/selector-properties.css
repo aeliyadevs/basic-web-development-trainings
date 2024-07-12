@@ -5,6 +5,7 @@ CSS Selectors
 1. Element/Tag/Simple Selector
 2. ID Selector
 3. Class Selector
+4. Group Selector
 */
 
 /* Simple Selector */
@@ -28,4 +29,9 @@ h3 {
 /* Class Selector */
 .myclass {
   color: blueviolet;
+}
+
+/* Group Selector */
+body .myclass {
+  color: green;
 }

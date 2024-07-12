@@ -1,0 +1,81 @@
+html {
+  font-size: 20px;
+}
+body {
+  color: white;
+  background: #222222;
+}
+.pixel {
+  font-size: 16px;
+  background: red;
+  display: inline;
+}
+.percent {
+  font-size: 100%;
+}
+.mm {
+  font-size: 20mm;
+}
+.box {
+  /* pixel */
+  /* width: 500px; */
+  font-size: 30px;
+
+  /* percentage */
+  /* width: 50%; */
+
+  /* millimeter */
+  /* width: 1mm; */
+
+  /* centimeter */
+  /* width: 1cm; */
+
+  /* inch */
+  /* width: 1in */
+
+  /* height: 100px; */
+  background-color: white;
+}
+
+.child-box {
+  /* background-color: aqua; */
+  /* height: 100px; */
+
+  /* em - relative to parent element */
+  /* width: 10em; */
+
+  /* rem - relative to root element */
+  /* width: 10rem; */
+
+  /* vw - viewport width */
+  width: 20%;
+  height: 50%;
+
+  /* vh - viewport height */
+  /* width: 20vh;
+  height: 20vh; */
+
+  /* time units - s, ms */
+  /* transition-duration: 10s; */
+  /* animation: animate linear infinite 500ms; */
+  /* transition-duration: 1500ms; */
+}
+
+@keyframes animate {
+  from {
+    width: 0;
+    height: 0;
+  }
+  to {
+    width: 20vh;
+    height: 20vh;
+  }
+}
+
+/* Selector Types - Group selector */
+.child-box ol li {
+  color: green;
+}
+.child-box ul li {
+  color: red;
+}
