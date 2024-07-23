@@ -7,27 +7,26 @@ body {
   height: 150px;
 } */
 .parent {
-  width: 100%;
+  width: 700px;
   height: 700px;
   background-color: whitesmoke;
   display: flex;
 
   /* flex-direction defines main-axis - default is row */
   flex-direction: column;
-
   /* justify-content aligns items in the main-axis */
   /* options: flex-start, center, flex-end, space-between, space-around, space-evenly */
-  justify-content: space-between;
+  /* justify-content: space-evenly; */
 
   /* align-items aligns items in the cross-axis */
   /* options: flex-start, center, flex-end */
-  /* align-items: center; */
+  align-items: center;
 
   /* adds space between items */
-  gap: 20px;
+  /* gap: 20px; */
 }
 .child {
-  width: 250px;
+  width: 100px;
   height: 100px;
 }
 .child-1 {
