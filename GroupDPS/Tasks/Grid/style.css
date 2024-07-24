@@ -1,0 +1,37 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #333333;
+}
+.container {
+  max-width: max-content;
+  margin: 60px auto;
+  /* background: whitesmoke; */
+  display: grid;
+  grid-template-rows: repeat(4, 160px);
+  grid-template-columns: repeat(6, 160px);
+  gap: 20px;
+}
+.banner {
+  width: 100%;
+  background: palegreen;
+  grid-row: span 2;
+  grid-column: span 4;
+}
+.item {
+  width: 100%;
+  background: greenyellow;
+  grid-column: span 2;
+}
+.square {
+  width: 100%;
+  background: salmon;
+  grid-row: span 2;
+  grid-column: span 2;
+}
+.tower {
+  background: aquamarine;
+  grid-row: span 2;
+}
