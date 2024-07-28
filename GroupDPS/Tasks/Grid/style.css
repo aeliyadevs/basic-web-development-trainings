@@ -14,7 +14,6 @@ h1 {
 .container {
   max-width: max-content;
   margin: 0 auto;
-  /* background: whitesmoke; */
   display: grid;
   grid-template-rows: repeat(4, 160px);
   grid-template-columns: repeat(6, 160px);
