@@ -40,3 +40,37 @@ console.log(y);
 var fruits = ["apple", "jackfruit", "banana", "mango"];
 var subject = ["math", "science", "computer"];
 var prime = [1, 3, 5, 7, 11, 13, 17];
+
+// object
+let book = {
+  name: "Munamadan",
+  author: "Laxmi Prasad Devkota",
+  publishedYear: 2008,
+};
+console.log(book);
+// Task - Student => Name, Class, Section, Roll No., Age
+
+// Operators
+let first = 5;
+let second = 18;
+
+// arithmetic operators
+// addition = +
+console.log(first + second);
+
+// difference = -
+console.log(first - second);
+
+// multiplication(product) = *
+console.log(first * second);
+
+// division = /
+console.log(second / first);
+
+// modulo(mod) = %
+console.log(second % first);
+
+// Assignment operators
+// equals to =
+var radius = 4.5;
+console.log(radius);
