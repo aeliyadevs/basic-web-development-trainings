@@ -74,3 +74,82 @@ console.log(second % first);
 // equals to =
 var radius = 4.5;
 console.log(radius);
+
+radius = radius + 5;
+// +=
+console.log((radius += 5));
+
+// -=
+console.log((radius -= 5));
+
+// *=
+console.log((radius *= 3));
+
+// /=
+console.log((radius /= 3));
+
+// ++ increment operator
+console.log(radius);
+console.log(++radius);
+console.log(radius++);
+console.log(radius);
+
+// -- decrement operator
+console.log(radius);
+console.log(--radius);
+console.log(radius--);
+console.log(radius);
+
+// Comparison Operators
+
+var sushma = "100";
+console.log(sushma);
+var khagendra = 100;
+console.log(khagendra);
+
+// equal to ==
+console.log(sushma == 100);
+
+// equal to ===
+console.log(sushma === "100");
+
+// not equal to != !==
+console.log(sushma != 99);
+console.log(sushma !== "100");
+
+// greater than >
+console.log(khagendra > 100);
+
+// less than <
+console.log(khagendra < 100);
+
+// greater than or equal to >=
+console.log(khagendra >= 100);
+
+// less than or equal to <=
+console.log(khagendra <= 100);
+
+// Logical Operators
+var minTest = "fail";
+var minAtt = 100;
+// AND - &&
+console.log(minTest == "pass" && minAtt == 100);
+
+// OR - ||
+console.log(minTest == "pass" || minAtt == 100);
+
+// NOT - !
+console.log(!(minTest == "pass"));
+
+// Min Devkota
+// test pass -> true
+// attendence 100% -> true
+// if both true, give him certificate
+
+// Calculate Simple Interest
+// SI = PTR/100
+let P = 120000;
+let T = 3;
+let R = 8;
+let SI = (P * T * R) / 100;
+// console.log(SI);
