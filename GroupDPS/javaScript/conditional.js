@@ -17,15 +17,14 @@ if (percentage > 40) {
 }
 
 // if - else if - else
-let GPA = 3.7;
-if (GPA > 3.6 && GPA <= 4) {
-  console.log("A+");
-} else if (GPA > 3.2 && GPA <= 3.6) {
-  console.log("A");
-}
-// else if (condition3) {
-//   //
-// }
-else {
-  console.log("Invalid GPA value.");
+// Find the actual grade of the student based on the provided GPA score.
+let GPA = 0.9;
+if (GPA < 0) {
+  console.log("Negative");
+} else if (GPA > 4) {
+  console.log("Out of range");
+} else if (GPA <= 0.8) {
+  console.log("NG");
+} else if (GPA > 0.8 && GPA <= 1.6) {
+  console.log("E");
 }
