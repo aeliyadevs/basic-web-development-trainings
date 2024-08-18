@@ -45,7 +45,7 @@ if (GPA < 0) {
 }
 
 // Switch Statement
-let day = "";
+let day = "sunday";
 
 // syntax
 switch (day) {
