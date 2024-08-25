@@ -19,11 +19,11 @@ let resultArea = document.getElementById("result");
 // function definitions
 function setFirstNum(event) {
   // x => something
-  x = parseInt(event.target.value);
+  x = parseFloat(event.target.value);
   console.log(x);
 }
 function setSecondNum(event) {
-  y = parseInt(event.target.value);
+  y = parseFloat(event.target.value);
   console.log(y);
 }
 

@@ -1,0 +1,58 @@
+html {
+  font-size: 16px;
+}
+body {
+  padding: 100px 0;
+  background: url("https://img.freepik.com/free-photo/blue-smooth-wall-textured-background_53876-106133.jpg?t=st=1724591453~exp=1724595053~hmac=76cec99cfa7312ae185c2a67516644c71ab58c7b0fd53b1ad201f6b68bcd8195&w=1480");
+  background-size: cover;
+}
+h1 {
+  font-size: 4rem;
+  text-align: center;
+  color: white;
+  margin: 15px;
+}
+input {
+  padding: 12px;
+  font-size: 2rem;
+  text-align: right;
+  border: none;
+  border-radius: 6px;
+}
+button {
+  height: 75px;
+  font-size: 1.5rem;
+  background: #162e55;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  flex-grow: 1;
+}
+.calculator {
+  width: 400px;
+  background: #22c2df;
+  padding: 50px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  border-radius: 6px;
+}
+.inputs {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+.buttons {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+}
+#result {
+  font-size: 4rem;
+  text-align: right;
+  background: white;
+  padding: 12px;
+  border-radius: 6px;
+}
