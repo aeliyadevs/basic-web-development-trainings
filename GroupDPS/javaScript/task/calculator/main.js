@@ -37,17 +37,17 @@ function add() {
 
 function subtract() {
   let diff = x - y;
-  resultArea.innerHTML = diff;
+  resultArea.innerHTML = diff.toFixed(10);
 }
 
 function multiply() {
   let product = x * y;
-  resultArea.innerHTML = product;
+  resultArea.innerHTML = product.toFixed(10);
 }
 
 function divide() {
   let division = x / y;
-  resultArea.innerHTML = division;
+  resultArea.innerHTML = division.toFixed(10);
 }
 
 // event handling
