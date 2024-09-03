@@ -1,3 +1,5 @@
+let deck = [];
+
 let dealerTotal = 0;
 let playerTotal = 0;
 
@@ -53,8 +55,45 @@ let values = [
   "king",
 ];
 
+// prepare cards and add to the deck
+let card = {};
 for (i = 0; i < suits.length; i++) {
   for (j = 0; j < values.length; j++) {
     console.log(values[j] + " of " + suits[i]);
+    card = {
+      suit: suits[i],
+      value: values[j],
+    };
+    deck.push(card);
   }
 }
+
+// switch statement
+function convertValue(valueString) {
+  switch (valueString) {
+    case "ace":
+      return 1;
+    case "two":
+      return 2;
+    case "three":
+      return 3;
+    case "four":
+      return 4;
+    case "five":
+      return 5;
+    case "six":
+      return 6;
+    case "seven":
+      return 7;
+    case "eight":
+      return 8;
+    case "nine":
+      return 9;
+    default:
+      return 10;
+  }
+}
+
+console.log(convertValue("two"));
+
+console.log(convertValue("ten") + convertValue("two"));
