@@ -37,8 +37,7 @@ let AceOfSpade = {
   value: 1,
   image: "a-spades.png",
 };
-
-let suits = ["diamond", "heart", "club", "spade"];
+let suits = ["club", "heart", "diamond", "spade"];
 let values = [
   "ace",
   "two",
@@ -59,7 +58,7 @@ let values = [
 let card = {};
 for (i = 0; i < suits.length; i++) {
   for (j = 0; j < values.length; j++) {
-    console.log(values[j] + " of " + suits[i]);
+    // console.log(values[j] + " of " + suits[i]);
     card = {
       suit: suits[i],
       value: values[j],
@@ -94,6 +93,20 @@ function convertValue(valueString) {
   }
 }
 
-console.log(convertValue("two"));
+// console.log(convertValue("two"));
 
-console.log(convertValue("ten") + convertValue("two"));
+// console.log(convertValue("ten") + convertValue("two"));
+
+// suffle the card deck
+function shuffleCards() {
+  let hold; // a temporary variable to hold card before replacing it
+  let newPos; // variable to store the new position of the card to be moved
+  for (i = 0; i < deck.length; i++) {
+    newPos = Math.trunc(Math.random() * deck.length); // generates random number less than the length of the card deck
+    hold = deck[newPos]; // holds the card currently in the position generated above
+    deck[newPos] = deck[i]; // swaps cards
+    deck[i] = hold; // swaps cards
+  }
+}
+shuffleCards(); // execute the function to suffle the cards
+console.log(deck); // show shuffled card deck
