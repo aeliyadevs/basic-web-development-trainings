@@ -3,7 +3,8 @@ let deck = [];
 let dealerTotal = 0;
 let playerTotal = 0;
 
-let dealerCards, playerCards;
+let dealerCards = [],
+  playerCards = [];
 
 const MAX = 21;
 
@@ -37,7 +38,10 @@ let AceOfSpade = {
   value: 1,
   image: "a-spades.png",
 };
-let suits = ["club", "heart", "diamond", "spade"];
+let suits = ["diamond", "spade", "club", "heart"];
+console.log(suits);
+
+hold = "spade";
 let values = [
   "ace",
   "two",
@@ -110,3 +114,24 @@ function shuffleCards() {
 }
 shuffleCards(); // execute the function to suffle the cards
 console.log(deck); // show shuffled card deck
+
+// Array options/methods
+// push - add new item to the array at last position
+// pop - remove last item from the array
+// unshift - add new item to the array at the first position
+// shift - remove first item from the array
+
+function distributeCards() {
+  playerCards.push(deck.shift());
+  dealerCards.push(deck.shift());
+  playerCards.push(deck.shift());
+  dealerCards.push(deck.shift());
+}
+distributeCards();
+
+function playerCardsSum() {
+  playerTotal = playerTotal + convertValue(playerCards[0].value);
+  playerTotal = playerTotal + convertValue(playerCards[1].value);
+  console.log(playerTotal);
+}
+playerCardsSum();
