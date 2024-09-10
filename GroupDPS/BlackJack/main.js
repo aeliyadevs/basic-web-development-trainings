@@ -38,10 +38,9 @@ let AceOfSpade = {
   value: 1,
   image: "a-spades.png",
 };
-let suits = ["diamond", "spade", "club", "heart"];
-console.log(suits);
 
-hold = "spade";
+let suits = ["diamond", "spade", "club", "heart"];
+
 let values = [
   "ace",
   "two",
@@ -113,7 +112,7 @@ function shuffleCards() {
   }
 }
 shuffleCards(); // execute the function to suffle the cards
-console.log(deck); // show shuffled card deck
+// console.log(deck); // show shuffled card deck
 
 // Array options/methods
 // push - add new item to the array at last position
@@ -130,8 +129,28 @@ function distributeCards() {
 distributeCards();
 
 function playerCardsSum() {
-  playerTotal = playerTotal + convertValue(playerCards[0].value);
-  playerTotal = playerTotal + convertValue(playerCards[1].value);
-  console.log(playerTotal);
+  for (i = 0; i < playerCards.length; i++) {
+    playerTotal = playerTotal + convertValue(playerCards[i].value);
+  }
 }
 playerCardsSum();
+
+function dealerCardsSum() {
+  for (i = 0; i < dealerCards.length; i++) {
+    dealerTotal = dealerTotal + convertValue(dealerCards[i].value);
+  }
+}
+dealerCardsSum();
+
+function compareCardsSum() {
+  // console.log(dealerCards);
+  // console.log(playerCards);
+  // console.log(dealerTotal);
+  // console.log(playerTotal);
+  if (dealerTotal > playerTotal) {
+    console.log("You lost");
+  } else {
+    console.log("You won");
+  }
+}
+compareCardsSum();
