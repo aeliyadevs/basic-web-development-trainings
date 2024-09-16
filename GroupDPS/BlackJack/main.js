@@ -65,9 +65,60 @@ for (i = 0; i < suits.length; i++) {
     card = {
       suit: suits[i],
       value: values[j],
+      image: generateImageName(suits[i], values[j]),
     };
     deck.push(card);
   }
+}
+
+//
+function generateImageName(suit, value) {
+  var valueShort;
+  switch (value) {
+    case "ace":
+      valueShort = "a";
+      break;
+    case "two":
+      valueShort = "2";
+      break;
+    case "three":
+      valueShort = "3";
+      break;
+    case "four":
+      valueShort = "4";
+      break;
+    case "five":
+      valueShort = "5";
+      break;
+    case "six":
+      valueShort = "6";
+      break;
+    case "seven":
+      valueShort = "7";
+      break;
+    case "eight":
+      valueShort = "8";
+      break;
+    case "nine":
+      valueShort = "9";
+      break;
+    case "ten":
+      valueShort = "10";
+      break;
+    case "jack":
+      valueShort = "j";
+      break;
+    case "queen":
+      valueShort = "q";
+      break;
+    case "king":
+      valueShort = "k";
+      break;
+    default:
+      valueShort = "";
+  }
+  var imageName = valueShort + "-" + suit + "s.png";
+  return imageName;
 }
 
 // switch statement
@@ -125,8 +176,15 @@ function distributeCards() {
   dealerCards.push(deck.shift());
   playerCards.push(deck.shift());
   dealerCards.push(deck.shift());
+  // playerCards.push(deck.shift());
+  // dealerCards.push(deck.shift());
 }
 distributeCards();
+
+function addNewCard() {
+  playerCards.push(deck.shift());
+}
+addNewCard();
 
 function playerCardsSum() {
   for (i = 0; i < playerCards.length; i++) {
@@ -143,10 +201,10 @@ function dealerCardsSum() {
 dealerCardsSum();
 
 function compareCardsSum() {
-  // console.log(dealerCards);
-  // console.log(playerCards);
-  // console.log(dealerTotal);
-  // console.log(playerTotal);
+  console.log(dealerCards);
+  console.log(playerCards);
+  console.log(dealerTotal);
+  console.log(playerTotal);
   if (dealerTotal > playerTotal) {
     console.log("You lost");
   } else {
