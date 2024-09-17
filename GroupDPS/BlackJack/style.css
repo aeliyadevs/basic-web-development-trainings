@@ -43,3 +43,7 @@ img {
   color: white;
   background: #34b0cf;
 }
+.cards {
+  display: flex;
+  gap: 10px;
+}

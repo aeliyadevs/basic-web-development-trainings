@@ -181,10 +181,10 @@ function distributeCards() {
 }
 distributeCards();
 
-function addNewCard() {
-  playerCards.push(deck.shift());
-}
-addNewCard();
+// function addNewCard() {
+//   playerCards.push(deck.shift());
+// }
+// addNewCard();
 
 function playerCardsSum() {
   for (i = 0; i < playerCards.length; i++) {
@@ -212,3 +212,17 @@ function compareCardsSum() {
   }
 }
 compareCardsSum();
+
+let playerCardImages = document.getElementById("playerCards");
+for (i = 0; i < playerCards.length; i++) {
+  let playerCard = document.createElement("img");
+  playerCard.src = "images/" + playerCards[i].image;
+  playerCardImages.appendChild(playerCard);
+}
+
+let dealerCardImages = document.getElementById("dealerCards");
+for (i = 0; i < dealerCards.length; i++) {
+  let dealerCard = document.createElement("img");
+  dealerCard.src = "images/" + dealerCards[i].image;
+  dealerCardImages.appendChild(dealerCard);
+}
