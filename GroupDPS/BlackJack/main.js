@@ -15,29 +15,29 @@ let result = "";
 // Suit - Club, Spade, Heart, Diamond
 // Value - Ace, 2, 3, ......, 10, J, Q, K
 
-let AceOfClub = {
-  suit: "Club",
-  value: 1,
-  image: "a-clubs.png",
-};
+// let AceOfClub = {
+//   suit: "Club",
+//   value: 1,
+//   image: "a-clubs.png",
+// };
 
-let AceOfDiamond = {
-  suit: "Diamond",
-  value: 1,
-  image: "a-diamonds.png",
-};
+// let AceOfDiamond = {
+//   suit: "Diamond",
+//   value: 1,
+//   image: "a-diamonds.png",
+// };
 
-let AceOfHearts = {
-  suit: "Hearts",
-  value: 1,
-  image: "a-hearts.png",
-};
+// let AceOfHearts = {
+//   suit: "Hearts",
+//   value: 1,
+//   image: "a-hearts.png",
+// };
 
-let AceOfSpade = {
-  suit: "Spade",
-  value: 1,
-  image: "a-spades.png",
-};
+// let AceOfSpade = {
+//   suit: "Spade",
+//   value: 1,
+//   image: "a-spades.png",
+// };
 
 let suits = ["diamond", "spade", "club", "heart"];
 
@@ -59,19 +59,22 @@ let values = [
 
 // prepare cards and add to the deck
 let card = {};
-for (i = 0; i < suits.length; i++) {
-  for (j = 0; j < values.length; j++) {
-    // console.log(values[j] + " of " + suits[i]);
-    card = {
-      suit: suits[i],
-      value: values[j],
-      image: generateImageName(suits[i], values[j]),
-    };
-    deck.push(card);
+
+function prepareDeck() {
+  for (i = 0; i < suits.length; i++) {
+    for (j = 0; j < values.length; j++) {
+      // console.log(values[j] + " of " + suits[i]);
+      card = {
+        suit: suits[i],
+        value: values[j],
+        image: generateImageName(suits[i], values[j]),
+      };
+      deck.push(card);
+    }
   }
+  // console.log(deck);
 }
 
-//
 function generateImageName(suit, value) {
   var valueShort;
   switch (value) {
@@ -161,8 +164,9 @@ function shuffleCards() {
     deck[newPos] = deck[i]; // swaps cards
     deck[i] = hold; // swaps cards
   }
+  // console.log(deck);
 }
-shuffleCards(); // execute the function to suffle the cards
+// shuffleCards(); // execute the function to suffle the cards
 // console.log(deck); // show shuffled card deck
 
 // Array options/methods
@@ -178,8 +182,10 @@ function distributeCards() {
   dealerCards.push(deck.shift());
   // playerCards.push(deck.shift());
   // dealerCards.push(deck.shift());
+  console.log(playerCards);
+  console.log(dealerCards);
 }
-distributeCards();
+// distributeCards();
 
 // function addNewCard() {
 //   playerCards.push(deck.shift());
@@ -214,15 +220,37 @@ function compareCardsSum() {
 compareCardsSum();
 
 let playerCardImages = document.getElementById("playerCards");
-for (i = 0; i < playerCards.length; i++) {
-  let playerCard = document.createElement("img");
-  playerCard.src = "images/" + playerCards[i].image;
-  playerCardImages.appendChild(playerCard);
+let dealerCardImages = document.getElementById("dealerCards");
+function displayCardImages() {
+  // display card images for the player
+  for (i = 0; i < playerCards.length; i++) {
+    let playerCard = document.createElement("img");
+    playerCard.src = "images/" + playerCards[i].image;
+    // playerCard.classList.add("animate");
+    playerCardImages.appendChild(playerCard);
+  }
+
+  // display card images for the dealer
+  for (i = 0; i < dealerCards.length; i++) {
+    let dealerCard = document.createElement("img");
+    dealerCard.src = "images/" + dealerCards[i].image;
+    // dealerCard.classList.add("animate");
+    dealerCardImages.appendChild(dealerCard);
+  }
 }
 
-let dealerCardImages = document.getElementById("dealerCards");
-for (i = 0; i < dealerCards.length; i++) {
-  let dealerCard = document.createElement("img");
-  dealerCard.src = "images/" + dealerCards[i].image;
-  dealerCardImages.appendChild(dealerCard);
+// handle button events
+let dealButton = document.getElementById("dealBtn");
+
+// Handle Deal button click
+function handleDealBtnClick() {
+  playerCards = [];
+  dealerCards = [];
+  playerCardImages.innerHTML = "";
+  dealerCardImages.innerHTML = "";
+  prepareDeck();
+  shuffleCards();
+  distributeCards();
+  displayCardImages();
 }
+dealButton.addEventListener("click", handleDealBtnClick);
