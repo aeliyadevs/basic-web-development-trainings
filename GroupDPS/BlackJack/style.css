@@ -48,6 +48,27 @@ img {
   gap: 10px;
 }
 
+#resultArea {
+  padding: 15px;
+  margin-bottom: 30px;
+  color: #ffffff;
+  font-size: 2rem;
+  text-align: center;
+  display: none;
+}
+/* .hide {
+  display: none;
+} */
+.show {
+  display: block !important;
+}
+.winner {
+  background: #00aa71;
+}
+.looser {
+  background: #fa3c3c;
+}
+
 /* .animate {
   animation: fadeIn 0.5s;
 } */

@@ -57,6 +57,8 @@ let values = [
   "king",
 ];
 
+let resultArea = document.getElementById("resultArea");
+
 // prepare cards and add to the deck
 let card = {};
 
@@ -197,27 +199,37 @@ function playerCardsSum() {
     playerTotal = playerTotal + convertValue(playerCards[i].value);
   }
 }
-playerCardsSum();
 
 function dealerCardsSum() {
   for (i = 0; i < dealerCards.length; i++) {
     dealerTotal = dealerTotal + convertValue(dealerCards[i].value);
   }
 }
-dealerCardsSum();
 
 function compareCardsSum() {
-  console.log(dealerCards);
-  console.log(playerCards);
-  console.log(dealerTotal);
-  console.log(playerTotal);
-  if (dealerTotal > playerTotal) {
-    console.log("You lost");
+  // console.log(dealerCards);
+  // console.log(playerCards);
+  playerCardsSum();
+  dealerCardsSum();
+  // console.log(dealerTotal);
+  // console.log(playerTotal);
+  // if (dealerTotal > playerTotal) {
+  //   console.log("You lost");
+  // } else {
+  //   console.log("You won");
+  // }
+
+  if (dealerTotal > 21) {
+    result = "You won!";
+  } else if (playerTotal > 21) {
+    result = "You lost!";
+  } else if (playerTotal > dealerTotal) {
+    result = "You won!";
   } else {
-    console.log("You won");
+    result = "You lost!";
   }
 }
-compareCardsSum();
+// compareCardsSum();
 
 let playerCardImages = document.getElementById("playerCards");
 let dealerCardImages = document.getElementById("dealerCards");
@@ -248,9 +260,36 @@ function handleDealBtnClick() {
   dealerCards = [];
   playerCardImages.innerHTML = "";
   dealerCardImages.innerHTML = "";
+  resultArea.classList.remove("show");
   prepareDeck();
   shuffleCards();
   distributeCards();
   displayCardImages();
 }
 dealButton.addEventListener("click", handleDealBtnClick);
+
+// Handle Hit Button click
+let hitButton = document.getElementById("hitBtn");
+function handleHitBtnClick() {
+  playerCards.push(deck.shift());
+  playerCardImages.innerHTML = "";
+  dealerCardImages.innerHTML = "";
+  displayCardImages();
+}
+
+hitButton.addEventListener("click", handleHitBtnClick);
+
+//Handle Stay Button click
+let stayButton = document.getElementById("stayBtn");
+function handleStayBtnClick() {
+  compareCardsSum();
+  resultArea.innerHTML = result;
+  resultArea.classList.add("show");
+  if (result == "You won!") {
+    resultArea.classList.add("winner");
+  } else {
+    resultArea.classList.add("looser");
+  }
+  // document.getElementById("resultArea").classList.remove("hide");
+}
+stayButton.addEventListener("click", handleStayBtnClick);
