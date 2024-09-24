@@ -184,8 +184,8 @@ function distributeCards() {
   dealerCards.push(deck.shift());
   // playerCards.push(deck.shift());
   // dealerCards.push(deck.shift());
-  console.log(playerCards);
-  console.log(dealerCards);
+  // console.log(playerCards);
+  // console.log(dealerCards);
 }
 // distributeCards();
 
@@ -208,7 +208,7 @@ function dealerCardsSum() {
 
 function compareCardsSum() {
   // console.log(dealerCards);
-  // console.log(playerCards);
+  console.log(playerCards);
   playerCardsSum();
   dealerCardsSum();
   // console.log(dealerTotal);
@@ -218,7 +218,7 @@ function compareCardsSum() {
   // } else {
   //   console.log("You won");
   // }
-
+  console.log(playerTotal);
   if (dealerTotal > 21) {
     result = "You won!";
   } else if (playerTotal > 21) {
@@ -238,7 +238,7 @@ function displayCardImages() {
   for (i = 0; i < playerCards.length; i++) {
     let playerCard = document.createElement("img");
     playerCard.src = "images/" + playerCards[i].image;
-    // playerCard.classList.add("animate");
+    playerCard.classList.add("animate");
     playerCardImages.appendChild(playerCard);
   }
 
@@ -260,7 +260,7 @@ function handleDealBtnClick() {
   dealerCards = [];
   playerCardImages.innerHTML = "";
   dealerCardImages.innerHTML = "";
-  resultArea.classList.remove("show");
+  resultArea.className = "";
   prepareDeck();
   shuffleCards();
   distributeCards();
@@ -274,6 +274,7 @@ function handleHitBtnClick() {
   playerCards.push(deck.shift());
   playerCardImages.innerHTML = "";
   dealerCardImages.innerHTML = "";
+  handleDealerHit();
   displayCardImages();
 }
 
@@ -282,6 +283,8 @@ hitButton.addEventListener("click", handleHitBtnClick);
 //Handle Stay Button click
 let stayButton = document.getElementById("stayBtn");
 function handleStayBtnClick() {
+  playerTotal = 0;
+  dealerTotal = 0;
   compareCardsSum();
   resultArea.innerHTML = result;
   resultArea.classList.add("show");
@@ -293,3 +296,14 @@ function handleStayBtnClick() {
   // document.getElementById("resultArea").classList.remove("hide");
 }
 stayButton.addEventListener("click", handleStayBtnClick);
+
+function handleDealerHit() {
+  dealerTotal = 0;
+  dealerCardsSum();
+  console.log(dealerCards);
+  console.log(dealerTotal);
+  if (dealerTotal < 17) {
+    dealerCards.push(deck.shift());
+  }
+  // displayCardImages();
+}
