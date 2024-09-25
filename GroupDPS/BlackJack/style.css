@@ -68,18 +68,14 @@ img {
 .looser {
   background: #fa3c3c;
 }
-
 .animate {
-  animation: fadeIn 0.5s;
+  animation: rotate 1s;
 }
-
-@keyframes fadeIn {
+@keyframes rotate {
   from {
-    transform: translateY(50px) scale(0);
-    opacity: 0;
+    transform: scale(0.75);
   }
   to {
-    transform: translateY(0) scale(1);
-    opacity: 1;
+    transform: scale(1);
   }
 }

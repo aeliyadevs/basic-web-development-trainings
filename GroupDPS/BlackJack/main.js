@@ -8,6 +8,8 @@ let dealerCards = [],
 
 const MAX = 21;
 
+let hiddenCard = "";
+
 let result = "";
 
 // Card Terms
@@ -219,6 +221,7 @@ function compareCardsSum() {
   //   console.log("You won");
   // }
   console.log(playerTotal);
+  console.log(dealerTotal);
   if (dealerTotal > 21) {
     result = "You won!";
   } else if (playerTotal > 21) {
@@ -245,8 +248,13 @@ function displayCardImages() {
   // display card images for the dealer
   for (i = 0; i < dealerCards.length; i++) {
     let dealerCard = document.createElement("img");
-    dealerCard.src = "images/" + dealerCards[i].image;
-    // dealerCard.classList.add("animate");
+    if (i === dealerCards.length - 1) {
+      hiddenCard = dealerCards[i].image;
+      dealerCard.src = "images/back.png";
+    } else {
+      dealerCard.src = "images/" + dealerCards[i].image;
+    }
+    dealerCard.classList.add("animate");
     dealerCardImages.appendChild(dealerCard);
   }
 }
@@ -286,6 +294,7 @@ function handleStayBtnClick() {
   playerTotal = 0;
   dealerTotal = 0;
   compareCardsSum();
+  showHiddenCard();
   resultArea.innerHTML = result;
   resultArea.classList.add("show");
   if (result == "You won!") {
@@ -306,4 +315,8 @@ function handleDealerHit() {
     dealerCards.push(deck.shift());
   }
   // displayCardImages();
+}
+
+function showHiddenCard() {
+  dealerCardImages.lastChild.src = "images/" + hiddenCard;
 }
